@@ -1,0 +1,7 @@
+{
+  "name": "PostApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
