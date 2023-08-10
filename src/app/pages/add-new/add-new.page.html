@@ -1,0 +1,53 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>addNew</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<!-- <ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">addNew</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content> -->
+<ion-header>
+  <ion-buttons slot="start">
+    <ion-back-button default-href="#"></ion-back-button>
+    <ion-title>
+      Add New
+    </ion-title>
+  </ion-buttons>
+</ion-header>
+
+<ion-content>
+  <!-- <div class="flex-center">bro</div> -->
+  <ion-card class="flex-center">
+    <ion-card-header>
+    <ion-card-title>Add post info</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+       
+          <ion-input
+            label="Title" 
+            label-placement="floating" 
+            placeholder="Enter title"
+            aria-placeholder="#7FFFD4" 
+            [counter]="true"
+            maxlength="20"
+            [counterFormatter]="customCounterFormatter"></ion-input>
+          <br/>
+          <ion-textarea 
+            label="Description" 
+            label-placement="floating" 
+            placeholder="Enter Description" 
+            [counter]="true"
+            maxlength="250"
+            [counterFormatter]="customCounterFormatter"></ion-textarea>
+          <br/><br/>
+      
+    </ion-card-content>
+    <ion-button fill="clear">Submit</ion-button>
+  </ion-card>
+</ion-content>
